@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useApi } from "../../../providers/api";
+import { useApi } from "../../../providers/Api";
 import {
   FormRegister,
   FormRegisterAccountBox,
@@ -19,7 +19,6 @@ import { parseISO } from "date-fns/esm";
 import { useHistory } from "react-router-dom";
 
 const RegistrationForm = ({ handleSubmit, register, errors }: any) => {
-
   const { handleRegisterRequest, isSign } = useApi();
   const history = useHistory();
 
@@ -51,7 +50,6 @@ const RegistrationForm = ({ handleSubmit, register, errors }: any) => {
     };
 
     await handleRegisterRequest(requestObj);
-
   };
 
   return (

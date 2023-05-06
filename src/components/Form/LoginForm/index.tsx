@@ -1,4 +1,4 @@
-import { useApi } from "../../../providers/api";
+import { useApi } from "../../../providers/Api";
 import { useHistory } from "react-router-dom";
 import { DetailsBoxOne, DetailsBoxTwo, StyledForm, TitleForm } from "./styles";
 import Button from "../../Button";

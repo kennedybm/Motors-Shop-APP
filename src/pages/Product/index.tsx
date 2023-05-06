@@ -27,7 +27,7 @@ import CommentCard from "../../components/CommentCard";
 import { useEffect, useRef, useState } from "react";
 import UserIconComponent from "../../components/UserIcon";
 import { useForm } from "react-hook-form";
-import { useApi } from "../../providers/api";
+import { useApi } from "../../providers/Api";
 
 const Product = () => {
   const colors = useRef([

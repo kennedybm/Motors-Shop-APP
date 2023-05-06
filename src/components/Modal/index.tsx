@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { useModal } from "../../providers/modal";
+import { useModal } from "../../providers/Modal";
 import { ModalSection, ModalContainerOne, ModalContainerTwo } from "./styles";
 
 interface IModalProps {

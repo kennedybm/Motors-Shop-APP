@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { ModalProvider } from "./modal";
-import { ApiProvider } from "./api";
+import { ModalProvider } from "./Modal";
+import { ApiProvider } from "./Api";
 import { HeaderProvider } from "./HeaderProvider";
 
 export interface IProviders {

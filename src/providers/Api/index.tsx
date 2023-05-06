@@ -14,7 +14,7 @@ import {
 import toast from "react-hot-toast";
 import axiosInstance from "../../services/api";
 import { useHistory } from "react-router-dom";
-import { useModal } from "../modal";
+import { useModal } from "../Modal";
 
 const ApiContext = createContext<IApi>({} as IApi);
 

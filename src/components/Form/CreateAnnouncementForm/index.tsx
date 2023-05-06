@@ -1,13 +1,20 @@
 import { useState } from "react";
-import { useApi } from "../../../providers/api";
-import { useModal } from "../../../providers/modal";
+import { useApi } from "../../../providers/Api";
+import { useModal } from "../../../providers/Modal";
 import Button from "../../Button";
 import Input from "../../Input";
 import { currencyMask } from "../inputMasks";
-import { ButtonBox, Container, FormAdInputManyContainer, FormAdInputOneContainer, FormAdTitle, FormAdTypeContainer, FormSection } from "./styles";
+import {
+  ButtonBox,
+  Container,
+  FormAdInputManyContainer,
+  FormAdInputOneContainer,
+  FormAdTitle,
+  FormAdTypeContainer,
+  FormSection,
+} from "./styles";
 
 const CreateAnnouncementForm = ({ handleSubmit, register, errors }: any) => {
-
   const { handleAnnouncementPostRequest } = useApi();
   const { handleSecondModal, handleFirstModal } = useModal();
 
@@ -85,7 +92,6 @@ const CreateAnnouncementForm = ({ handleSubmit, register, errors }: any) => {
         </FormAdTypeContainer>
       </FormSection>
       <FormSection>
-
         <h3>Informações do veículo</h3>
         <FormAdInputOneContainer>
           <Input
@@ -146,7 +152,6 @@ const CreateAnnouncementForm = ({ handleSubmit, register, errors }: any) => {
               maskFunction={currencyMask}
             />
           )}
-
         </FormAdInputManyContainer>
         <FormAdInputOneContainer>
           <Input
@@ -162,7 +167,6 @@ const CreateAnnouncementForm = ({ handleSubmit, register, errors }: any) => {
         </FormAdInputOneContainer>
       </FormSection>
       <FormSection>
-
         <h3>Tipo de veículo</h3>
         <FormAdTypeContainer>
           <Button
@@ -244,6 +248,6 @@ const CreateAnnouncementForm = ({ handleSubmit, register, errors }: any) => {
       </FormAdTypeContainer>
     </Container>
   );
-}
+};
 
 export default CreateAnnouncementForm;

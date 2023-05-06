@@ -2,7 +2,7 @@ import Form from "../../components/Form";
 import { MainDiv } from "./styles";
 import { Toaster } from "react-hot-toast";
 import Header from "../../components/Header";
-import { useModal } from "../../providers/modal";
+import { useModal } from "../../providers/Modal";
 import Modal from "../../components/Modal";
 import SuccessCard from "../../components/SuccessCard";
 
@@ -12,9 +12,9 @@ const Register = () => {
     <>
       {selectedModal === "registrationSuccess" ? (
         <Modal name="first" pTop="20vh" pLeft="0%">
-          <SuccessCard type={'registration'}></SuccessCard>
+          <SuccessCard type={"registration"}></SuccessCard>
         </Modal>
-      ) : (null)}
+      ) : null}
       <MainDiv>
         <Header />
         <Form name="register" />
